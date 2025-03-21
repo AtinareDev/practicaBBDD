@@ -3,7 +3,7 @@ import sqlite3
 # Crear conexion a la base de datos SQLite
 def crear_conexion():
     try:
-        conexion = sqlite3.connect('pruebas.db')
+        conexion = sqlite3.connect(r'SQ_Lite\pruebas.db')
         return conexion
     except sqlite3.Error as e:
         print(f"Error al conectar con la base de datos: {e}")
